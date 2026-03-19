@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "bins": {
+    "docker-restart": {
+      "source": "builtin",
+      "description": "Restart docker service",
+      "category": "docker"
+    }
+  }
+}

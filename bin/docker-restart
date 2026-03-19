@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ "$(uname)" == "Darwin" ]; then
+    launchctl stop com.docker.docker && launchctl start com.docker.docker
+else
+    systemctl restart docker
+fi
