@@ -1,0 +1,8 @@
+#!/bin/bash
+
+docker stop $(docker ps -aq) && \
+docker rm $(docker ps -aq) && \
+docker rmi $(docker images -q) && \
+docker builder prune -af && \
+docker volume rm $(docker volume ls -q) && \
+docker network ls --format '{{.Name}}' | rg -v '^(bridge|host|none)$' | while read -r network; do docker network rm "$network"; done

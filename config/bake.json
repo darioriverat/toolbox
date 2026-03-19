@@ -6,6 +6,11 @@
       "description": "Show docker disk usage",
       "category": "docker"
     },
+    "docker-nuke": {
+      "source": "builtin",
+      "description": "Nuke docker",
+      "category": "docker"
+    },
     "docker-restart": {
       "source": "builtin",
       "description": "Restart docker service",
