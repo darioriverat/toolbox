@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# exit on error
+set -e
+
+if [ "$(uname)" == "Darwin" ] && [ ! "$(uname -m)" = "x86_64" ]; then
+    platform="--platform=linux/amd64"
+else
+    platform=""
+fi
+
+# create the shared directory in home if it doesn't exist
+shared_dir="$HOME/docker-shared"
+mkdir -p "$shared_dir"
+
+echo "Shared directory: $shared_dir"
+
+docker run -it --rm \
+    -v "$shared_dir:/docker-shared" \
+    $platform \
+    debian:latest \
+    bash

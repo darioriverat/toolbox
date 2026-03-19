@@ -21,6 +21,11 @@
       "description": "Stop all docker containers",
       "category": "docker"
     },
+    "docker-try-debian": {
+      "source": "builtin",
+      "description": "Try debian in docker",
+      "category": "docker"
+    },
     "lima-docker-start": {
       "source": "builtin",
       "description": "Start lima docker and switch context to lima-docker",
