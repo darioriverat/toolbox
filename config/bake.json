@@ -20,6 +20,16 @@
       "source": "builtin",
       "description": "Stop all docker containers",
       "category": "docker"
+    },
+    "lima-docker-start": {
+      "source": "builtin",
+      "description": "Start lima docker and switch context to lima-docker",
+      "category": "lima"
+    },
+    "lima-docker-down": {
+      "source": "builtin",
+      "description": "Stop lima docker and switch context to default",
+      "category": "lima"
     }
   }
 }
