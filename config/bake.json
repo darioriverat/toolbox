@@ -10,6 +10,11 @@
       "source": "builtin",
       "description": "Restart docker service",
       "category": "docker"
+    },
+    "docker-stop-all": {
+      "source": "builtin",
+      "description": "Stop all docker containers",
+      "category": "docker"
     }
   }
 }
