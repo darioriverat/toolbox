@@ -1,6 +1,11 @@
 {
   "version": 1,
   "bins": {
+    "docker-disk-usage": {
+      "source": "builtin",
+      "description": "Show docker disk usage",
+      "category": "docker"
+    },
     "docker-restart": {
       "source": "builtin",
       "description": "Restart docker service",
