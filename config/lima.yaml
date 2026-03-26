@@ -109,6 +109,7 @@ images:
 
 mounts:
 - location: "~"
+  writable: true  # Allow containers to write to the home directory
 
 - location: "{{.GlobalTempDir}}/lima"
   mountPoint: /tmp/lima
